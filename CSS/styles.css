@@ -1,0 +1,152 @@
+/* 
+    font-family: "Graphik-Light";
+    font-family: "Graphik-Bold";
+    font-family: 'Roboto', sans-serif; // regular 400
+*/
+
+/* ------ Buttons */
+/* font-size for EM units is set on class .btn in 1.3.Typography */
+
+
+/* CLAMP is calculated for min vw 300px and max vw 1440px */
+
+
+/* ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */
+
+
+/* ===========================================
+Table of Content:
+    1.GLOBAL 
+        1.1.Body Size, paddings
+        1.2.Font Colors
+            - Buttons
+            - Hover Effects
+        1.3.Typography
+        1.4.Z-Index
+        1.5.Layout
+    2.HERO
+    3.FEATURES
+    4.FASTEST WAY
+    5.NEWSLETTER
+    6.PARTNERS
+    7.TESTIMONIALS
+    8.PRICING
+    9.CONTACT
+    10.FOOTER
+*/
+
+/* mobile design is made for 418 * 863 screen w*h */
+
+/* ===========================================
+1.GLOBAL 
+*/
+/* 1.3.Typography */
+/*
+--> coded in reset-normalizer.css:
+Main font family - Graphik-Light, sans-serif,
+Main font-size: 62.5% -> 10px=1rem,
+Main font weight: 300,
+Main line-height: 2.8rem;
+*/
+
+.main-title {
+    font-size: 4.8rem;
+    line-height: 5.5rem;
+    text-align: center;
+    padding: 9rem 4.2rem 1.7rem 4.2rem;
+}
+
+.title {
+    font-size: 2.8rem;
+    line-height: 4rem;
+    text-align: center;
+    padding: 0 5.6rem 5.9rem 5.6rem;
+}
+
+.small-title {
+    font-family: "Graphik-Bold";
+    font-size: 2rem;
+}
+
+.partner-name {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+.testimonial-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+}
+
+.testimonial-author-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.testimonial-author-profession {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+.btn {
+    font-size: 2rem;
+}
+
+
+/* 1.5.Layout */
+header,
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* ===========================================
+1.HERO 
+*/
+.hero {
+    width: 100%;
+    height: 86.3rem;
+    color: #ffffff;
+}
+
+.hero-bg-mobile {
+    background-image: url(../images/hero-bg-mobile.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 1.7rem 1.6rem;
+}
+
+.logo-img {
+    width: 20.6rem;
+    height: 7.8rem;
+}
+
+.social-icon-img {
+    width: 3.2rem;
+    height: auto;
+}
+
+
+
+
+
+/* NEXT
+continue typography
+cut small-title in mobile
+global
+hero */
