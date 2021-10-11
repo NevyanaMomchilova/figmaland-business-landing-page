@@ -63,7 +63,8 @@ Main line-height: 2.8rem;
     padding: 0 5.6rem 5.9rem 5.6rem;
 }
 
-.small-title {
+.small-title,
+.price-currency {
     font-family: "Graphik-Bold";
     font-size: 2rem;
 }
@@ -103,11 +104,6 @@ p {
     font-family: "Graphik-Bold";
     font-size: 7.4rem;
     line-height: 8.4rem;
-}
-
-.price-currency {
-    font-family: "Graphik-Bold";
-    font-size: 2rem;
 }
 
 .pricing-feature {
