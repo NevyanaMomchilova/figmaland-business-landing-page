@@ -68,7 +68,10 @@ Main line-height: 2.8rem;
     font-size: 2rem;
 }
 
-.partner-name {
+.partner-name,
+.pricing-offer-text,
+.pricing-due-date,
+.address-text {
     font-size: 1.6rem;
     line-height: 2.3rem;
 }
@@ -94,6 +97,21 @@ p {
 .testimonial-author-profession {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
+}
+
+.price-amount {
+    font-family: "Graphik-Bold";
+    font-size: 7.4rem;
+    line-height: 8.4rem;
+}
+
+.price-currency {
+    font-family: "Graphik-Bold";
+    font-size: 2rem;
+}
+
+.pricing-feature {
+    font-size: 1.5rem;
 }
 
 .btn {
