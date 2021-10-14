@@ -37,10 +37,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-size: 1.6rem;
-}
-
 /* Inherit fonts for inputs and buttons */
 input,
 button,
