@@ -32,7 +32,32 @@ Table of Content:
 1.GLOBAL 
 */
 /* 1.1.Main paddings */
+header {
+    padding: 1.7rem 1.6rem;
+}
 
+.hero-info {
+    padding-top: 9rem;
+}
+
+.features {
+    padding-top: 12rem;
+    padding-bottom: 11.3rem;
+}
+
+.fastest-way,
+.newsletter {
+    padding-bottom: 16rem;
+}
+
+.fastest-way img,
+.newsletter img {
+    padding: 0 2.3rem 0 2.3rem;
+}
+
+.newsletter img {
+    padding-bottom: 6.9rem;
+}
 
 /* 1.2.Typography */
 /*
@@ -42,17 +67,29 @@ Main font-size: 62.5% -> 10px=1rem,
 Main font weight: 300,
 Main line-height: 2.8rem;
 */
+.main-title,
+.title,
+.small-title,
+p,
+.partner-name,
+.testimonial-author-name {
+    text-align: center;
+}
+
+.address-text {
+    text-align: left;
+}
 
 .main-title {
     font-size: 4.8rem;
     line-height: 5.5rem;
-    text-align: center;
+    padding: 0 4.2rem 3.5rem 4.2rem;
 }
 
 .title {
     font-size: 2.8rem;
     line-height: 4rem;
-    text-align: center;
+    padding: 0 5.6rem 8rem 5.6rem;
 }
 
 .small-title,
@@ -92,6 +129,11 @@ p {
     font-size: 1.3rem;
 }
 
+.newsletter input[type="email"] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
 .price-amount {
     font-family: "Graphik-Bold";
     font-size: 7.4rem;
@@ -118,6 +160,7 @@ p {
 .btn {
     padding: 1.3rem 6.8rem;
     background-color: #2091F9;
+    color: white;
     border-radius: 3.5rem;
     display: inline-block;
 }
@@ -128,19 +171,16 @@ p {
     box-shadow: 0 0 2rem rgba(0,0,0,0.2),
                 0 0.3rem 1rem rgba(0,0,0,0.6);
     transform: scale(1.02);
-    transition: all 0.05s ease-in-out;
-    
+    transition: all 0.05s ease-in-out;  
+}
+
+.newsletter input[type="email"]:hover {
+    box-shadow: 0 0 2rem rgba(0,0,0,0.2),
+                0 0.3rem 1rem rgba(0,0,0,0.6);
+    transition: all 0.05s ease-in-out; 
 }
 
 /* 1.4.Z-Index */
-.hero {
-    position: relative;
-    z-index: 1; 
-}
-.main-title {
-    position: relative;
-    z-index: 0;
-}
 
 
 /* 1.5.Layout */
@@ -156,7 +196,11 @@ header,
     align-items: center;
 }
 
-.hero-info {
+.hero-info,
+.features,
+.feature,
+.fastest-way,
+.newsletter form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,7 +210,7 @@ header,
 
 
 /* ===========================================
-1.HERO 
+2.HERO 
 */
 .hero {
     width: 100%;
@@ -181,12 +225,9 @@ header,
     background-size: cover;
 }
 
-header {
-    padding: 1.7rem 1.6rem;
-}
-
 .logo-img {
-    width: 20.6rem;
+    width: 100%;
+    min-width: 17rem;
     height: 7.8rem;
 }
 
@@ -195,34 +236,103 @@ header {
     height: auto;
 }
 
-.hero-info .main-title {
+/* .hero-info .main-title {
     padding: 9rem 4.2rem 3.5rem 4.2rem;
 }
 
 .hero-info .title {
     padding: 0 5.6rem 8rem 5.6rem;
+} */
+
+
+/* ===========================================
+3.FEATURES 
+*/
+video {
+    width: 38.6rem;
+    height: 21.6rem;
+    border-radius: 1.5rem;
+    margin: 0 1.6rem 6.8rem 1.6rem;
+}
+
+.feature-icon {
+    width: 4.6rem;
+    height: auto;
+}
+
+.feature .small-title {
+    padding: 2rem 11.2rem;
+}
+
+.feature p {
+    padding: 0 9.35rem 7.5rem 9.35rem;
+}
+
+
+/* ===========================================
+4.FASTEST WAY
+*/
+.btn-fastest-way {
+    margin-bottom: 6rem;
+}
+
+
+/* ===========================================
+5.NEWSLETTER
+*/
+.newsletter .small-title {
+    padding-bottom: 2rem;
+}
+
+.newsletter .small-title-second {
+    padding-bottom: 1rem;
+}
+
+.newsletter p {
+    padding: 1rem 0 3.4rem 0;
+}
+
+.newsletter input {
+    width: 35.3rem;
+    height: 5.4rem;
+    margin-bottom: 1.2rem;
+    border: none;
+    border-radius: 3.5rem;
+}
+
+.newsletter input[type="email"] {
+    background-color: #E8E8E8;
+    padding: 1.9rem 0 1.9rem 3.5rem;
+    outline: #E8E8E8; 
 }
 
 
 
 
 
-/* NEXT
-!
-ISSUE WITH HERO Background
+/* NEXT TO DO
 
-continue typography
-global
-hero
+CLAMP is calculated for min vw 300px and max vw 1777px (the desktop version by design
+
+VIDEO CUSTOMIZATION play button
+
+optimize images
+Favicon
+Transitions
+Cross-browser
+Prefixes
+Speed load
+W3C variation
 
 !!!
-CHECK the desktop version differences:
+CHECK the DESKTOP version differences:
 - main-title for hero
 - bg for hero
 - block the hidden-on-desktop class
 - un-block the hidden-on-mobile class after 520px screen width
 
-TYPOGRAPHY CHANGES on desktop : 
+/* ADD the below to Media Query for above 520px screen width
+TYPOGRAPHY CHANGES on DESKTOP : 
 .testimonial-text {
     font-family: "Graphik-Light";
     font-size: 2.8rem;
@@ -237,15 +347,11 @@ TYPOGRAPHY CHANGES on desktop :
     font-family: "Graphik-Light";
     font-size: 1.5rem;
 }
-
-- hero height after 420px screen width have to change
-
-
- */
-
- /* ADD the below to Media Query for above 520px screen width */
- /* CLAMP is calculated for min vw 300px and max vw 1777px (the desktop version by design */
-/* .hero-main-title-desktop-version {
+.hero-main-title-desktop-version {
     font-family: "Graphik-Bold";
     font-size: clamp(4.8rem, 4.0003rem + 1.9132vw, 7.4rem);
-} */
+}
+
+- hero height after 420px screen width have to change
+*/
+ 
