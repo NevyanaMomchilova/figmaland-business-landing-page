@@ -46,7 +46,8 @@ header {
 }
 
 .fastest-way,
-.newsletter {
+.newsletter,
+.partners {
     padding-bottom: 16rem;
 }
 
@@ -196,11 +197,7 @@ header,
     align-items: center;
 }
 
-.hero-info,
-.features,
-.feature,
-.fastest-way,
-.newsletter form {
+.main-layout {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -306,7 +303,37 @@ video {
     outline: #E8E8E8; 
 }
 
+.newsletter input[type="email"]::placeholder {
+    color: #18171D;
+    /* opacity for Firefox */
+    opacity: 1;
+}
 
+.newsletter input[type="email"]:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #18171D;
+}
+  
+.newsletter input[type="email"]::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #18171D;
+}
+
+
+/* ===========================================
+6.PARTNERS
+*/
+.partner {
+    width: 27.3rem;
+    height: 15.1rem;
+    padding: 2.5rem 4rem;
+    border: 0.1rem solid #D8D8D8;
+    margin: 1.8rem 0;
+}
+
+.btn-partner {
+    margin-top: 8rem;
+}
 
 
 
