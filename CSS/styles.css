@@ -159,11 +159,37 @@ p {
 /* ------ Buttons */
 /* font-size for EM units is set on class .btn in 1.2.Typography */
 .btn {
-    padding: 1.3rem 6.8rem;
     background-color: #2091F9;
     color: white;
     border-radius: 3.5rem;
     display: inline-block;
+}
+
+.btn-accent {
+    background-color: white;
+    color: #2091F9;
+}
+
+.hero-info .btn{
+    padding: 1.3rem 6.8rem;
+}
+
+.btn-fastest-way,
+.btn-partners {
+    padding: 1.6rem 6rem;
+}
+
+.btn-testimonials {
+    padding: 1.6rem 4.8rem;
+}
+
+.btn-contact-form {
+    padding: 1.8rem 4.8rem;
+}
+
+.btn-pricing-offer {
+    padding: 1.8rem 7.6rem;
+    outline: #0081fa; 
 }
 
 /* ------ Hover Effects */
@@ -331,13 +357,48 @@ video {
     margin: 1.8rem 0;
 }
 
-.btn-partner {
+.btn-partners {
     margin-top: 8rem;
 }
 
 
+/* ===========================================
+7.TESTIMONIALS
+*/
+.testimonials-img {
+    width: 12.6rem;
+    height: auto;
+    margin: 6rem 0 4.5rem 0;
+}
+
+.testimonial-text {
+    padding: 0 5.9rem 4.5rem 5.9rem;
+}
+
+.testimonial-author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9.5rem;
+}
+
+.testimonial-author img {
+    width: 4.2rem;
+    height: auto;
+    margin-right: 1.1rem;
+}
+
+.testimonial-author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 
 /* NEXT TO DO
+
+FINISH .btn-contact-form - outline?? outset???
 
 CLAMP is calculated for min vw 300px and max vw 1777px (the desktop version by design
 
