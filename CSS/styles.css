@@ -57,6 +57,11 @@ header {
 
 .pricing {
     padding: 6rem 0;
+    margin-bottom: 16rem;
+}
+
+.contact {
+    padding-bottom: 15rem;
 }
 
 .fastest-way img,
@@ -66,6 +71,10 @@ header {
 
 .newsletter img {
     padding-bottom: 6.9rem;
+}
+
+.social-icons {
+    width: 17rem;
 }
 
 /* 1.2.Typography */
@@ -87,6 +96,7 @@ p,
 
 .address-text {
     text-align: left;
+    font-style: normal;
 }
 
 .main-title {
@@ -103,6 +113,12 @@ p,
 
 .pricing .title {
     padding-bottom: 10.8rem;
+}
+
+.contact .title,
+.contact .social-icons,
+.contact address {
+    padding-bottom: 7rem;
 }
 
 .small-title,
@@ -147,6 +163,11 @@ p {
     font-size: 1.4rem;
 }
 
+.contact input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
 .price-amount {
     font-family: "Graphik-Bold";
     font-size: 7.4rem;
@@ -157,7 +178,8 @@ p {
     font-size: 1.5rem;
 }
 
-.btn {
+.btn,
+.contact .btn {
     font-size: 2rem;
 }
 
@@ -199,25 +221,33 @@ address {
     outline: #E8E8E8; 
 }
 
-.newsletter input[type="email"]::placeholder {
+.contact-form input {
+    background-color: #F5F5F5;
+}
+
+.newsletter input[type="email"]::placeholder,
+.contact-form input::placeholder {
     color: #18171D;
     /* opacity for Firefox */
     opacity: 1;
 }
 
-.newsletter input[type="email"]:-ms-input-placeholder {
+.newsletter input[type="email"]::-ms-input-placeholder,
+.contact-form input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #18171D;
 }
   
-.newsletter input[type="email"]::-ms-input-placeholder {
+.newsletter input[type="email"]::-ms-input-placeholder,
+.contact-form input::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #18171D;
 }
 
 /* ------ Buttons */
 /* font-size for EM units is set on class .btn in 1.2.Typography */
-.btn {
+.btn,
+.contact .btn {
     background-color: #2091F9;
     color: white;
     border-radius: 3.5rem;
@@ -242,8 +272,8 @@ address {
     padding: 1.6rem 4.8rem;
 }
 
-.btn-contact-form {
-    padding: 1.8rem 4.8rem;
+.contact .btn {
+    padding: 0 4.8rem;
 }
 
 .btn-pricing-offer {
@@ -252,7 +282,8 @@ address {
 }
 
 /* ------ Hover Effects */
-.btn:hover {
+.btn:hover,
+.contact .btn:hover {
     background-color: #0081fa;
     box-shadow: 0 0 2rem rgba(0,0,0,0.2),
                 0 0.3rem 1rem rgba(0,0,0,0.6);
@@ -260,7 +291,12 @@ address {
     transition: all 0.05s ease-in-out;  
 }
 
-.newsletter input[type="email"]:hover {
+.btn-accent:hover {
+    background-color: white;
+}
+
+.newsletter input[type="email"]:hover,
+.contact input:hover {
     box-shadow: 0 0 2rem rgba(0,0,0,0.2),
                 0 0.3rem 1rem rgba(0,0,0,0.6);
     transition: all 0.05s ease-in-out; 
@@ -487,9 +523,87 @@ video {
 }
 
 
+/* ===========================================
+9.CONTACT
+*/
+.contact address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3.45rem;
+    padding-right: 3.45rem;
+}
+
+.address-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-field-middle {
+    padding: 2rem 0;
+}
+
+.icon-map {
+    width: 2.6rem;
+}
+
+.icon-phone {
+    width: 2.1rem;
+}
+
+.icon-mail {
+    width: 2.7rem;
+}
+
+.address-text {
+    margin-left: 2rem;
+}
+
+.contact-form {
+    Width: 37.8rem;
+    height: 66.9rem;
+    border: 0.1rem solid #DDDDDD;
+    border-radius: 2rem;
+    box-shadow: 0rem 1.3rem 1.9rem rgba(0, 0, 0, 0.07);
+    padding: 5.2rem 4.9rem;
+}
+
+.contact-form fieldset {
+    border: none;
+}
+
+.contact .small-title {
+    margin-bottom: 4rem;
+}
+
+.contact-form input {
+    width: 28rem;
+    height: 5.4rem;
+    border: 0.1rem solid #E8E8E8;
+    border-radius: 3.9rem;
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+}
+
+.contact input[name="message"] {
+    height: 19.3rem;
+    border-radius: 0;
+    padding-top: 2rem;
+    padding-bottom: 15.4rem;
+}
+
+.contact-form .btn {
+    width: 14.5rem;
+    align-self: flex-start;
+    border: none;
+}
+
+
 /* NEXT TO DO
 
-FINISH .btn-contact-form - outline?? outset???
+FINISH .contact .btn- outline?? outset???
 contact form input font color etc
 
 CLAMP is calculated for min vw 300px and max vw 1777px (the desktop version by design
