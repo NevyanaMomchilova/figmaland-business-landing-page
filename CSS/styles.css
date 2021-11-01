@@ -64,6 +64,10 @@ header {
     padding-bottom: 15rem;
 }
 
+footer {
+    padding: 11.7rem 6.7rem 12.7rem 6.7rem;
+}
+
 .fastest-way img,
 .newsletter img {
     padding: 0 2.3rem 0 2.3rem;
@@ -163,7 +167,8 @@ p {
     font-size: 1.4rem;
 }
 
-.contact input {
+.contact input,
+footer .address-text {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
 }
@@ -601,10 +606,56 @@ video {
 }
 
 
+/* ===========================================
+9.FOOTER
+*/
+footer,
+footer address {
+    background-color: #252B42;
+    color: white;
+}
+
+.footer-section-middle {
+    margin: 8.3rem 0;
+}
+
+.footer-section .small-title {
+    margin-bottom: 0.9rem;
+}
+
+.footer-link {
+    padding-top: 1.6rem;
+}
+
+footer address {
+    margin: 7.6rem 0 3rem 0;
+}
+
+.icon-map-white {
+    width: 3.5rem;
+}
+
+.icon-phone-white {
+    width: 1.8rem;
+    margin-left: 0.5rem;
+}
+
+footer address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer .address-field {
+    margin: 0.5rem 0;
+}
+
+
+
+
 /* NEXT TO DO
 
-FINISH .contact .btn- outline?? outset???
-contact form input font color etc
 
 CLAMP is calculated for min vw 300px and max vw 1777px (the desktop version by design
 
